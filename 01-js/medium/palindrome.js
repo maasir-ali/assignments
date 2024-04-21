@@ -4,7 +4,13 @@
 */
 
 function isPalindrome(str) {
-  return true;
+  // let newStr = str.split(" ").map((char) => char.replace(/[^\w\s]/g, '')).join("").toLowerCase();
+  // let reversedStr = str.split(" ").join("").toLowerCase().split("").map((char) => char.replace(/[^\w\s]/g, '')).reverse().join("");
+  // return newStr == reversedStr? true: false;
+
+  let a = str.split(" ").join("").toLowerCase().replace(/[^\w\s]/g, '').split("").join("");
+  let b = str.split(" ").join("").toLowerCase().replace(/[^\w\s]/g, '').split("").reverse().join("");
+  return a == b ? true: false;
 }
 
 module.exports = isPalindrome;

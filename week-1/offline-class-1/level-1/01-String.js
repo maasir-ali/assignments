@@ -30,6 +30,7 @@ findLastIndexOf("Hello World World", "World");
 function getSlice(str, start, end) {
   console.log("Original String:", str);
   console.log("After slice:", str.slice(start, end));
+  console.log(str.slice(start, end).length);
 }
 getSlice("Hello World", 0, 5);
 
@@ -37,6 +38,7 @@ getSlice("Hello World", 0, 5);
 function getSubstring(str, start, end) {
   console.log("Original String:", str);
   console.log("After substring:", str.substring(start, end));
+  console.log(str.substring(start, end).length);
 }
 getSubstring("Hello World", 0, 5);
 
